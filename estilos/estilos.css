@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  background-image: url("../img/milanesas.jpg");
+  height: 90vh;
+}
+
+.tracking-in-expand {
+  animation: tracking-in-expand 2s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+.img_carousel {
+  height: 90vh;
+}
+
+.img_carousel img {
+  height: 90vh;
+  object-fit: cover;
+}
+
+.imagen_frente {
+  background-image: url("../img/frente comercio.PNG");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagen_frente p {
+  font-size: 40px;
+  background-color: white;
+  padding: 1px;
+  margin: 1px;
+  border-radius: 5px;
+}
+
+.img_productos {
+  width: 500px;
+  height: 350px;
+}
+
+@media (max-width: 500px) {
+  .img_productos {
+    width: 90%;
+  }
+}
+@media (max-width: 1000px) {
+  .cartita {
+    width: 100%;
+  }
+}
+@media (max-width: 300px) {
+  .imagen_frente p {
+    font-size: 20px;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
